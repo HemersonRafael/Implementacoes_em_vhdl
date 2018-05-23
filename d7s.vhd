@@ -14,12 +14,12 @@ End d7s;
 Architecture estrutural OF d7s IS
 signal h :std_logic;
 Begin
-a <= w or y or (x xnor z);
-b <= (not(x)) or (y xnor z);
-c <= x or (not(y)) or z;
-d <= w or h or (y and (not(x))) or (y and (not(z))) or (x and (not(y)) and z);
-e <= h or (y and (not(z)));
-f <= w or ((not(y)) and (not(z))) or ((not(y)) and x) or ( x and (not(z)));
-g <= w or (x xor y) or ( x and (not(z)));
-h <= ((not(x)) and (not(z)));
+a <= not ( w or y or (x xnor z));
+b <= not ( (not(x)) or (y xnor z));
+c <= not ( x or (not(y)) or z);
+d <= not ( w or h or (y and (not(x))) or (y and (not(z))) or (x and (not(y)) and z));
+e <= not ( h or (y and (not(z))));
+f <= not ( w or ((not(y)) and (not(z))) or ((not(y)) and x) or ( x and (not(z))));
+g <= not ( w or (x xor y) or ( x and (not(z))));
+h <= not ( ((not(x)) and (not(z))));
 End estrutural;
