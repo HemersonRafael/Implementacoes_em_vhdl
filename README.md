@@ -1,1 +1,1 @@
-# Projetos_de_circuito_digitais
+# Implementacoes_em_vhdl
