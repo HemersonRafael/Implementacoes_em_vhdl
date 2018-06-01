@@ -42,4 +42,3 @@ begin
 	saida <= qsaida;
 	ds: d7s port map(qsaida(3),qsaida(2),qsaida(1),qsaida(0),a,b,c,d,e,f,g);
 end contador;
-	
